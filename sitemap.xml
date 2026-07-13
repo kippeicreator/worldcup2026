@@ -60,4 +60,16 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://kippeicreator.github.io/worldcup2026/how-to-check-football-fixtures/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://kippeicreator.github.io/worldcup2026/ballon-dor-guide/</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
