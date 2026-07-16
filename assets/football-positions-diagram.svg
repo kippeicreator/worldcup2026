@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" role="img" aria-labelledby="title desc">
+  <title id="title">サッカーの基本ポジションと担当ゾーン</title>
+  <desc id="desc">右方向へ攻撃するピッチ上に、GK、DF、MF、FWの基本的な担当ゾーンと選手配置を示した独自図解。実際の役割は戦術によって変わる。</desc>
+  <defs>
+    <marker id="direction" markerHeight="8" markerWidth="8" orient="auto" refX="7" refY="4">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#d8a641"/>
+    </marker>
+  </defs>
+  <rect width="720" height="500" rx="24" fill="#101923"/>
+  <text x="34" y="38" fill="#f4f0e8" font-family="system-ui, sans-serif" font-size="22" font-weight="700">基本ポジションと担当ゾーン</text>
+  <line x1="510" y1="29" x2="678" y2="29" stroke="#d8a641" stroke-width="4" marker-end="url(#direction)"/>
+  <text x="540" y="20" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="16" font-weight="700">攻撃方向</text>
+
+  <rect x="34" y="68" width="652" height="350" rx="8" fill="#16463f" stroke="#f4f0e8" stroke-width="3"/>
+  <rect x="34" y="68" width="104" height="350" fill="#d8a641" opacity=".16"/>
+  <rect x="138" y="68" width="176" height="350" fill="#6fb6e8" opacity=".14"/>
+  <rect x="314" y="68" width="202" height="350" fill="#62c6a2" opacity=".13"/>
+  <rect x="516" y="68" width="170" height="350" fill="#d8a641" opacity=".13"/>
+  <line x1="360" y1="68" x2="360" y2="418" stroke="#fff" stroke-width="2" opacity=".75"/>
+  <circle cx="360" cy="243" r="52" fill="none" stroke="#fff" stroke-width="2" opacity=".75"/>
+  <rect x="34" y="163" width="75" height="160" fill="none" stroke="#fff" stroke-width="2" opacity=".75"/>
+  <rect x="611" y="163" width="75" height="160" fill="none" stroke="#fff" stroke-width="2" opacity=".75"/>
+
+  <text x="65" y="95" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="18" font-weight="800">GK</text>
+  <text x="205" y="95" fill="#d9efff" font-family="system-ui, sans-serif" font-size="18" font-weight="800">DF</text>
+  <text x="401" y="95" fill="#d8fff1" font-family="system-ui, sans-serif" font-size="18" font-weight="800">MF</text>
+  <text x="585" y="95" fill="#ffe6aa" font-family="system-ui, sans-serif" font-size="18" font-weight="800">FW</text>
+
+  <g fill="#d8a641" stroke="#fff" stroke-width="3">
+    <circle cx="83" cy="243" r="18"/>
+  </g>
+  <g fill="#6fb6e8" stroke="#fff" stroke-width="3">
+    <rect x="196" y="123" width="34" height="34" rx="6"/>
+    <rect x="196" y="200" width="34" height="34" rx="6"/>
+    <rect x="196" y="277" width="34" height="34" rx="6"/>
+    <rect x="196" y="354" width="34" height="34" rx="6"/>
+  </g>
+  <g fill="#62c6a2" stroke="#fff" stroke-width="3">
+    <path d="M415 125 L435 160 L395 160 Z"/>
+    <path d="M415 222 L435 257 L395 257 Z"/>
+    <path d="M415 319 L435 354 L395 354 Z"/>
+  </g>
+  <g fill="#d8a641" stroke="#fff" stroke-width="3">
+    <path d="M585 138 L607 160 L585 182 L563 160 Z"/>
+    <path d="M615 221 L637 243 L615 265 L593 243 Z"/>
+    <path d="M585 304 L607 326 L585 348 L563 326 Z"/>
+  </g>
+
+  <text x="50" y="453" fill="#f4f0e8" font-family="system-ui, sans-serif" font-size="16" font-weight="700">GK: ゴールを守る</text>
+  <text x="205" y="453" fill="#f4f0e8" font-family="system-ui, sans-serif" font-size="16" font-weight="700">DF: 守備</text>
+  <text x="335" y="453" fill="#f4f0e8" font-family="system-ui, sans-serif" font-size="16" font-weight="700">MF: 攻守をつなぐ</text>
+  <text x="535" y="453" fill="#f4f0e8" font-family="system-ui, sans-serif" font-size="16" font-weight="700">FW: 得点へ</text>
+  <text x="153" y="483" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="15" font-weight="700">注: 実際の位置と役割はチームの戦術や試合状況によって変わります。</text>
+</svg>

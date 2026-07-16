@@ -34,6 +34,10 @@ const backToTop = document.querySelector(".back-to-top");
 let activeArticleCategory = "all";
 
 function renderCities(filter = "all") {
+  if (!grid) {
+    return;
+  }
+
   grid.innerHTML = "";
 
   cities
@@ -71,7 +75,7 @@ buttons.forEach((button) => {
 });
 
 function normalize(value) {
-  return value.toLowerCase().trim();
+  return String(value).toLowerCase().trim();
 }
 
 function cardMatchesSearch(card, query) {
@@ -98,7 +102,7 @@ function updateArticleCards() {
   });
 
   if (articleCount) {
-    articleCount.textContent = `${visible} topic${visible === 1 ? "" : "s"} shown`;
+    articleCount.textContent = `${visible}件のガイドを表示`;
   }
 }
 
@@ -115,7 +119,7 @@ function updateGuideCards() {
   });
 
   if (guideCount) {
-    guideCount.textContent = `${visible} guide${visible === 1 ? "" : "s"} shown`;
+    guideCount.textContent = `${visible}件の初心者向けガイドを表示`;
   }
 }
 
@@ -132,22 +136,31 @@ articleSearch?.addEventListener("input", updateArticleCards);
 guideSearch?.addEventListener("input", updateGuideCards);
 
 menuToggle?.addEventListener("click", () => {
+  if (!header) {
+    return;
+  }
+
   const isOpen = header.classList.toggle("nav-open");
   menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+  menuToggle.setAttribute("aria-label", isOpen ? "ナビゲーションメニューを閉じる" : "ナビゲーションメニューを開く");
 });
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    header.classList.remove("nav-open");
+    header?.classList.remove("nav-open");
     menuToggle?.setAttribute("aria-expanded", "false");
-    menuToggle?.setAttribute("aria-label", "Open navigation menu");
+    menuToggle?.setAttribute("aria-label", "ナビゲーションメニューを開く");
   });
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
-    const target = document.querySelector(link.getAttribute("href"));
+    const href = link.getAttribute("href");
+    if (!href || href === "#") {
+      return;
+    }
+
+    const target = document.querySelector(href);
     if (!target) {
       return;
     }
@@ -167,7 +180,7 @@ backToTop?.addEventListener("click", () => {
 window.addEventListener("scroll", updateBackToTop, { passive: true });
 
 const revealTargets = document.querySelectorAll(
-  ".topic-card, .article-card, .utility-card, .spotlight-card, .history-card, .club-grid article, .guide-list article, .city-card, .info-grid article"
+  ".topic-card, .article-card, .guide-card, .city-card, .info-card"
 );
 
 if ("IntersectionObserver" in window) {
@@ -191,36 +204,8 @@ if ("IntersectionObserver" in window) {
   revealTargets.forEach((target) => target.classList.add("is-visible"));
 }
 
-function updateCountdown() {
-  const now = new Date();
-  const kickoff = new Date("2026-06-11T19:00:00-05:00");
-  const final = new Date("2026-07-19T15:00:00-04:00");
-  const label = document.querySelector("#countdown-label");
-  const days = document.querySelector("#countdown-days");
-  const detail = document.querySelector("#countdown-detail");
-
-  let target = kickoff;
-  let text = "開幕まで";
-
-  if (now >= kickoff && now < final) {
-    target = final;
-    text = "決勝まで";
-  } else if (now >= final) {
-    label.textContent = "Tournament";
-    days.textContent = "2026";
-    detail.textContent = "開催記録";
-    return;
-  }
-
-  const diff = target - now;
-  const remainingDays = Math.max(0, Math.ceil(diff / 86400000));
-  label.textContent = text;
-  days.textContent = String(remainingDays);
-  detail.textContent = remainingDays === 1 ? "day" : "days";
-}
-
 renderCities();
-updateCountdown();
+window.VekpalCountdown?.renderCountdown(document, new Date());
 updateArticleCards();
 updateGuideCards();
 updateBackToTop();

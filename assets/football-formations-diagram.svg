@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" role="img" aria-labelledby="title desc">
+  <title id="title">4つの代表的なサッカーフォーメーション比較</title>
+  <desc id="desc">4-4-2、4-3-3、4-2-3-1、3-5-2を4つの小さなピッチで比較し、各配置にゴールキーパーを別に示した独自図解。</desc>
+  <rect width="800" height="700" rx="24" fill="#101923"/>
+  <text x="34" y="42" fill="#f4f0e8" font-family="system-ui, sans-serif" font-size="24" font-weight="800">代表的なフォーメーション比較</text>
+  <text x="510" y="40" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="17" font-weight="700">数字にGKは含めません</text>
+
+  <g id="pitch-a" transform="translate(34 70)">
+    <rect width="350" height="260" rx="10" fill="#16463f" stroke="#f4f0e8" stroke-width="3"/>
+    <line x1="175" y1="0" x2="175" y2="260" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <circle cx="175" cy="130" r="35" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <text x="16" y="28" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="22" font-weight="800">4-4-2</text>
+    <circle cx="26" cy="130" r="12" fill="#d8a641" stroke="#fff" stroke-width="2"/>
+    <text x="11" y="160" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">GK</text>
+    <g fill="#6fb6e8" stroke="#fff" stroke-width="2">
+      <circle cx="92" cy="48" r="12"/><circle cx="92" cy="104" r="12"/><circle cx="92" cy="156" r="12"/><circle cx="92" cy="212" r="12"/>
+    </g>
+    <g fill="#62c6a2" stroke="#fff" stroke-width="2">
+      <circle cx="205" cy="48" r="12"/><circle cx="205" cy="104" r="12"/><circle cx="205" cy="156" r="12"/><circle cx="205" cy="212" r="12"/>
+    </g>
+    <g fill="#d8a641" stroke="#fff" stroke-width="2"><circle cx="300" cy="95" r="12"/><circle cx="300" cy="165" r="12"/></g>
+  </g>
+
+  <g id="pitch-b" transform="translate(416 70)">
+    <rect width="350" height="260" rx="10" fill="#16463f" stroke="#f4f0e8" stroke-width="3"/>
+    <line x1="175" y1="0" x2="175" y2="260" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <circle cx="175" cy="130" r="35" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <text x="16" y="28" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="22" font-weight="800">4-3-3</text>
+    <circle cx="26" cy="130" r="12" fill="#d8a641" stroke="#fff" stroke-width="2"/>
+    <text x="11" y="160" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">GK</text>
+    <g fill="#6fb6e8" stroke="#fff" stroke-width="2">
+      <circle cx="92" cy="48" r="12"/><circle cx="92" cy="104" r="12"/><circle cx="92" cy="156" r="12"/><circle cx="92" cy="212" r="12"/>
+    </g>
+    <g fill="#62c6a2" stroke="#fff" stroke-width="2"><circle cx="200" cy="68" r="12"/><circle cx="200" cy="130" r="12"/><circle cx="200" cy="192" r="12"/></g>
+    <g fill="#d8a641" stroke="#fff" stroke-width="2"><circle cx="300" cy="60" r="12"/><circle cx="300" cy="130" r="12"/><circle cx="300" cy="200" r="12"/></g>
+  </g>
+
+  <g id="pitch-c" transform="translate(34 366)">
+    <rect width="350" height="260" rx="10" fill="#16463f" stroke="#f4f0e8" stroke-width="3"/>
+    <line x1="175" y1="0" x2="175" y2="260" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <circle cx="175" cy="130" r="35" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <text x="16" y="28" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="22" font-weight="800">4-2-3-1</text>
+    <circle cx="26" cy="130" r="12" fill="#d8a641" stroke="#fff" stroke-width="2"/>
+    <text x="11" y="160" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">GK</text>
+    <g fill="#6fb6e8" stroke="#fff" stroke-width="2">
+      <circle cx="82" cy="48" r="12"/><circle cx="82" cy="104" r="12"/><circle cx="82" cy="156" r="12"/><circle cx="82" cy="212" r="12"/>
+    </g>
+    <g fill="#62c6a2" stroke="#fff" stroke-width="2"><circle cx="160" cy="90" r="12"/><circle cx="160" cy="170" r="12"/></g>
+    <g fill="#62c6a2" stroke="#fff" stroke-width="2"><circle cx="238" cy="62" r="12"/><circle cx="238" cy="130" r="12"/><circle cx="238" cy="198" r="12"/></g>
+    <circle cx="312" cy="130" r="12" fill="#d8a641" stroke="#fff" stroke-width="2"/>
+  </g>
+
+  <g id="pitch-d" transform="translate(416 366)">
+    <rect width="350" height="260" rx="10" fill="#16463f" stroke="#f4f0e8" stroke-width="3"/>
+    <line x1="175" y1="0" x2="175" y2="260" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <circle cx="175" cy="130" r="35" fill="none" stroke="#fff" stroke-width="2" opacity=".7"/>
+    <text x="16" y="28" fill="#f0c96f" font-family="system-ui, sans-serif" font-size="22" font-weight="800">3-5-2</text>
+    <circle cx="26" cy="130" r="12" fill="#d8a641" stroke="#fff" stroke-width="2"/>
+    <text x="11" y="160" fill="#fff" font-family="system-ui, sans-serif" font-size="13" font-weight="700">GK</text>
+    <g fill="#6fb6e8" stroke="#fff" stroke-width="2"><circle cx="95" cy="70" r="12"/><circle cx="95" cy="130" r="12"/><circle cx="95" cy="190" r="12"/></g>
+    <g fill="#62c6a2" stroke="#fff" stroke-width="2">
+      <circle cx="205" cy="38" r="12"/><circle cx="190" cy="88" r="12"/><circle cx="190" cy="130" r="12"/><circle cx="190" cy="172" r="12"/><circle cx="205" cy="222" r="12"/>
+    </g>
+    <g fill="#d8a641" stroke="#fff" stroke-width="2"><circle cx="300" cy="95" r="12"/><circle cx="300" cy="165" r="12"/></g>
+  </g>
+
+  <g transform="translate(95 660)" font-family="system-ui, sans-serif" font-size="15" font-weight="700">
+    <circle cx="0" cy="0" r="10" fill="#6fb6e8"/><text x="17" y="5" fill="#f4f0e8">DF</text>
+    <circle cx="100" cy="0" r="10" fill="#62c6a2"/><text x="117" y="5" fill="#f4f0e8">MF</text>
+    <circle cx="200" cy="0" r="10" fill="#d8a641"/><text x="217" y="5" fill="#f4f0e8">FW / GK</text>
+    <text x="345" y="5" fill="#f0c96f">同じ表記でも役割や動き方は変わります</text>
+  </g>
+</svg>
